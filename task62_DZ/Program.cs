@@ -1,7 +1,12 @@
 ﻿// Задача 62. Напишите программу, которая заполнит спирально массив 4 на 4.
 // Например, на выходе получается вот такой массив:
-int[,] matr = new int[4, 4];
+
+Console.Write("Введите количество строк и столбцов "); 
+int n = Convert.ToInt32(Console.ReadLine());//число столбцов
+int[,] matr = new int[n, n];
+
 Console.WriteLine();
+
 int i, j;
 for (j = 0, i = 0; j < n; j++)
     matr[i, j] = 1;
@@ -65,4 +70,4 @@ for (int ii = 0; ii < n; ii++)
         Console.Write(matr[ii, jj]);
     Console.WriteLine();
 }
-Console.ReadLine();
+
